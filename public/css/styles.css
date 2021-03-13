@@ -1,0 +1,330 @@
+/*font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Ubuntu', sans-serif;*/
+
+body{
+    background-color: #f1f6f9;
+}
+
+/*NAVBAR*/
+
+.navbar-main{
+    background-color: #050220;
+}
+.navbar{
+    height:100px;
+}
+.responsive-navbar{
+    margin:auto 15px;
+}
+.top-header{
+    background-color: #050220;
+}
+.logo{
+    align-items:center ;
+    display: flex;
+    color: rgb(255, 255, 255);
+}
+.logo-image{
+    padding: 5px;
+    vertical-align: middle;
+    
+}
+.logo-name{
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 30px;
+}
+.nav-item{
+    margin-right: 20px;
+    font-size: larger;
+}
+.nav-item:hover{
+    color: #f1f6f9;
+    text-shadow: 2px 2px 2px rgb(34, 34, 34), 0 0 25px rgb(79, 79, 189), 0 0 5px rgb(59, 59, 129);
+}
+.nav-link{
+    color:#FFFFFF;
+}
+.minnavbutton{
+    margin-right:auto 0 auto auto;
+}
+
+/*MAIN TEXT*/
+#main-text{
+    
+    height:700px;
+    background-image: url('/images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.text{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: #000000;
+}
+.text{
+    margin: auto;
+    width:70%;
+    padding: 20%;
+}
+
+/*QUESTIONS*/
+.align-carusel{
+    margin:auto;
+}
+.my-carousel{
+    width:40%;
+    margin:auto;
+}
+#questions{
+    
+    margin:50px auto;
+    
+}
+#quote{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-image{
+    height: 300px;
+    width:300px;
+}
+
+
+/*FEATURES*/
+#features{
+    margin:60px auto;
+}
+.align-features{
+    margin:auto;
+    padding:20px;
+    width: 70%;
+}
+.features-card{
+    
+    background-color: #ebe9e9;
+    text-align: center;
+}
+.features-card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+/*NEWS*/
+#news{
+    margin:100px auto;
+}
+.align-news{
+    width:70%;
+    margin: auto;
+}
+.card:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.card-value{
+    padding:10px;
+}
+
+/*FOOTER*/
+#footer{
+    background-color: #050220;
+    padding:50px 100px;
+    margin:auto;
+    text-align: center;
+}
+.footer-icon{
+    color: #FFFFFF;
+    margin: auto 6px;
+}
+.copyright{
+    color: #FFFFFF;
+    margin:10px auto;
+    padding-top: 12px;
+}
+.team-name{
+    color: #FFFFFF;
+    margin:10px auto;
+    padding-top: 12px;
+}
+
+/*ABOUT*/
+#about{
+    margin-top:50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.about-title{
+    font-size: xx-large;
+}
+.about-text{
+    margin-top: 50px;
+    font-size: larger;
+    text-align: justify;
+    padding: 0px 70px 0px 70px;
+}
+
+/*DEVELOPERS*/
+.developers{
+    padding:200px;
+}
+.dev-heading{
+    text-align: center;
+}
+.circular--square {
+    border-radius: 50%;
+}
+.circular--square {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+.all-cards{
+    margin-top: 50px;
+}
+.name-card{
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px;
+}
+
+.card-row1:hover{
+    background-color: antiquewhite;
+}
+/*.card-row1 .my-icon{
+    display:none;
+    
+    cursor:pointer;
+}
+.card-row1:hover{
+    background-color: antiquewhite;
+}
+.card-row1:hover .my-icon{
+    display:inline-block;
+}
+
+
+ye nii daalna h, isse gadbad ho rahi
+.name-card{
+    align-content: center;
+    margin:70px;
+}
+
+
+
+.my-icon:hover{
+    display:inline-block;
+    color:black;
+}*/
+
+
+
+
+
+/* SEcond style sheet */
+
+
+
+/* The sidebar menu */ 
+
+.sidebar { 
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0; 
+    background-color:  rgb(0, 0, 0);  
+    overflow-x: hidden; 
+    padding-top: 130px; 
+    transition: 0.5s; 
+} 
+
+/* The sidebar links */ 
+.sidebar a { 
+    padding: 8px 8px 8px 32px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    color: white; 
+    display: block; 
+    transition: 0.3s; 
+} 
+
+/* Mouse over the navigation 
+links, to change their color */ 
+.sidebar a:hover { 
+    color: green; 
+} 
+
+/* Position and style the close 
+button at top right corner */ 
+.sidebar .closebtn { 
+    position: absolute; 
+    top: 0; 
+    right: 25px; 
+    font-size: 36px; 
+    margin-left: 50px; 
+} 
+
+/* The button used to open the sidebar */ 
+.openbtn { 
+    font-size: 20px; 
+    cursor: pointer; 
+    background-color:  rgb(22, 33, 68);  
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    position: fixed;
+    left: 0px;
+
+} 
+
+.openbtn:hover { 
+    background-color: #444; 
+} 
+
+/* Style page content - pushes the 
+page content to the right when the 
+sidebar is opened */ 
+#main { 
+
+    /* If you want a transition effect */ 
+    transition: margin-left 0.5s; 
+    padding: 20px; 
+} 
+
+
+/* On smaller screens, where height is 
+less than 450px, change the style of 
+the side-nav (less padding and a 
+smaller font size) */ 
+@media screen and (max-height: 450px) { 
+    .sidebar { 
+        padding-top: 15px; 
+    } 
+
+    .sidebar a { 
+        font-size: 18px; 
+    } 
+
+    
+} 
+
+@media screen and (max-width: 700px)
+{
+    .intro
+    {
+        padding-top:100px ;
+    }
+}
+
+
+.intro{
+    padding-left: 0px;
+    padding-right: 10px;
+    
+    font-size: 20px;
+}
