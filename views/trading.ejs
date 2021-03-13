@@ -1,0 +1,90 @@
+<%- include('partials/header') %>
+<%- include('partials/sidebar') %>
+
+    <!-- The main division contains the actual 
+        content of the webpage -->
+
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="col-1">
+          <button class="openbtn" onclick="openNav()">Menu
+          </button>
+        </div>
+        <div class="col-11 intro">
+          <h2>
+            TRADING IN STOCKS
+          </h2>
+          <p>
+            Once listed on the stock exchanges, the stocks issued by companies can be traded in the secondary market to make profits or cut losses. This buying and selling of stocks listed on the exchanges are done by stockbrokers /brokerage firms, that act as the middleman between investors and the stock exchange.
+            Your broker passes on your buy order for shares to the stock exchange. The stock exchange searches for a sell order for the same share.
+            Once a seller and a buyer are found and fixed, a price is agreed to finalize the transaction. Post that the stock exchange communicates to your broker that your order has been confirmed.
+            This message is then passed on to you by the broker.
+
+            <p>Meanwhile, the stock exchange also confirms the details of the buyers and the sellers of shares to ensure the parties don’t default.
+It then facilitates the actual transfer of ownership of shares from sellers to buyers. This process is called the settlement cycle.
+Earlier, it used to take weeks to settle stock trades. But now, this has been brought down to T+2 days.
+</p>
+<p><h3>How does it works??</h3>
+  The concept behind how the stock market works is pretty simple. Operating much like an auction house, the stock market enables buyers and sellers to negotiate prices and make trades.
+
+<p>The stock market works through a network of exchanges — you may have heard of the New York Stock Exchange or the Nasdaq. Companies list shares of their stock on an exchange through a process called an initial public offering, or IPO. Investors purchase those shares, which allows the company to raise money to grow its business. Investors can then buy and sell these stocks among themselves, and the exchange tracks the supply and demand of each listed stock.</p>
+
+<p>That supply and demand help determine the price for each security, or the levels at which stock market participants — investors and traders — are willing to buy or sell.</p>
+
+<p>Buyers offer a “bid,” or the highest amount they’re willing to pay, which is usually lower than the amount sellers “ask” for in exchange. This difference is called the bid-ask spread. For a trade to occur, a buyer needs to increase his price or a seller needs to decrease hers.</p>
+
+<p>This all may sound complicated, but computer algorithms generally do most of price-setting calculations. When buying stock, you’ll see the bid, ask, and bid-ask spread on your broker's website, but in many cases, the difference will be pennies, and won’t be of much concern for beginner and long-term investors.</p>
+
+</p>
+
+<p>
+  Investors often track the stock market's performance by looking at a broad market index like the S&P 500 or the DJIA. The chart below shows the current performance of the stock market — as measured by the S&P 500's closing price on the most recent trading day — as well as the S&P 500's historical performance since 1990.
+</p>
+            
+
+
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- <div id="main">
+      <h1 style="color: green;">
+        Welcome to GeeksForGeeks
+      </h1>
+      <button class="openbtn" onclick="openNav()">Menu
+      </button>
+
+      <h2>
+        This is a demonstration of collapsed
+        sidebar by default. The sidebar opens
+        on clicking the Menu button.
+      </h2>
+    </div> -->
+  </section>
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById(
+        "mySidebar").style.width = "200px";
+      document.getElementById(
+        "main").style.marginLeft = "200px";
+    }
+
+    /* Set the width of the sidebar to 0 
+    and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById(
+        "mySidebar").style.width = "0";
+      document.getElementById(
+        "main").style.marginLeft = "0";
+    }
+  </script>
+
+<%- include('partials/footer') %>

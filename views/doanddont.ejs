@@ -1,0 +1,89 @@
+<%- include('partials/header') %>
+<%- include('partials/sidebar') %>
+
+        <!-- The main division contains the actual 
+        content of the webpage -->
+
+
+        <div class="container" id="main">
+            <div class="row">
+                <div class="col-1">
+                    <button class="openbtn" onclick="openNav()">Menu
+                    </button>
+                </div>
+                <div class="col-11 intro">
+                    <h2>
+                        DO'S AND DONT'S
+                    </h2>
+                    <p>
+                        <h3>DO's</h3>
+                        <ul>
+                        <li>Start by virtual stock market investing app on mobile or try out a stock investing desktop
+                        application before trying the stock market. These virtual apps are useful for practice before
+                        making an actual stock market investment.</li>
+                        <li>You should invest ample amount of time for doing research on the stock you want to buy. Buy
+                        shares when they are at a lower price and try to understand the stock pattern.</li>
+                        <li>Even if you have a small amount of money, start investing early as you can take good advantage
+                        of compounding from an early stage.</li>
+                        <li>Diversify your investment. Investing in various sectors lowers your chances of loss.
+                        Invest most of your money in the blue chip companies. They give you low returns but lowers your
+                        risk of loss.</li>
+                        <li>Keep yourself up to date with the latest news of the company you are invested in.</li>
+                        </ul>
+                       
+
+                    </p>
+                    <p>
+                        <h3>Don’ts:</h3>
+                        <ul>
+                        <li>Don’t wait for the perfect time to enter into the stock market, as there is no perfect time.
+                        Start as early as possible.</li>
+                        <li>Don’t get carried away with the speculations, initial profits and buzz.
+                        The trading fees should be less than 2%. Otherwise, it can eat up your profit.</li>
+                        <li>Don’t invest more than your capacity and always set a budget for investing.</li>
+                        <li>Don’t be greedy, try to figure out the right time to sell your stock.</li>
+                        <li>Don’t get carried away and invest all your money in a particular stock. You may face a huge
+                        loss.</li>
+</ul>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- <div id="main">
+      <h1 style="color: green;">
+        Welcome to GeeksForGeeks
+      </h1>
+      <button class="openbtn" onclick="openNav()">Menu
+      </button>
+
+      <h2>
+        This is a demonstration of collapsed
+        sidebar by default. The sidebar opens
+        on clicking the Menu button.
+      </h2>
+    </div> -->
+    </section>
+
+
+    <script>
+        function openNav() {
+            document.getElementById(
+                "mySidebar").style.width = "200px";
+            document.getElementById(
+                "main").style.marginLeft = "200px";
+        }
+
+        /* Set the width of the sidebar to 0 
+        and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById(
+                "mySidebar").style.width = "0";
+            document.getElementById(
+                "main").style.marginLeft = "0";
+        }
+    </script>
+
+<%- include('partials/footer') %>

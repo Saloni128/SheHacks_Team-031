@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+    <section style="width:30%; margin:5% auto">
+        <!-- form : api trial -->
+        <form action="mailto:iit2019128@iiita.ac.in,iit2019149@iiita.ac.in" method="post" enctype="text/plain" class="">
+
+            <div class="mb-3">
+                <label for="name">Name:</label>
+                <input class="form-control" type="text" name="name" id="">
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Email Address:</label>
+                <input class="form-control" type="email" name="email" id="">
+            </div>
+
+            <div class="mb-3">
+                <label for="">Subject:</label>
+                <input class="form-control" type="text" name="subject" id="">
+            </div>
+            <div class="mb-3">
+                <label for="">Message:</label>
+                <textarea name="message" id="" cols="60" rows="10"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <%- include('partials/footer') %>

@@ -1,0 +1,85 @@
+<%- include('partials/header') %>
+<%- include('partials/sidebar') %>
+
+
+    <!-- The main division contains the actual 
+        content of the webpage -->
+
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="col-1">
+          <button class="openbtn" onclick="openNav()">Menu
+          </button>
+        </div>
+        <div class="col-11 intro">
+          <h2>
+            Fundamental Analysis
+          </h2>
+          <p>
+            Fundamental analysis is a method of evaluating the intrinsic value of a stock. This form of analysis combines external events and influences, as well as financial statements and industry trends. Remember the intrinsic value/fair value of a stock does not change everyday. To understand what is that fair value, you should take the help of fundamentals, which are what drives prices up and down.
+
+<p>Fundamental analysis uses three sets of data. One, historical data is used to know things were earlier. Two, publicly known information about the company including announcements made by the management, and what others are saying about the company. Three, information that is not known publicly but is useful i.e. instances of how management handles crises, situations etc.</p>
+
+<p>Fundamental analysis is a way to avoid short-term information about a company/stock. Every day there is some news on stocks. While these information may form the basis of trades, not everyone in the stock market is a trader. Many people believe in long-term investing. They want to buy and hold stocks.</p>
+
+<p>Fundamental analysis helps you identify attributes of companies. The process of fundamental analysis will require you to understand a bit of mathematics, business and accounting basics. Along with this, you will need to have some common sense of how the company operates, the industry/sector and other things that can be imbibed from various documents.</p>
+
+          </p>
+<p>
+  A few elements of quantitative fundamental analysis are EPS, P/E ratio, P/B ratio, Debt/Equity ratio and RoE ratio. These are among the few fundamental indicators that help you understand deeper about the company/stock.
+<ul>
+<li>Earning Per Share is called EPS. This is a measure of profitability.
+EPS = Net Profit of The Company divided Number of Outstanding Shares</li>
+<li>Price to Earnings Ratio is called P/E ratio. This is a measure of valuation.
+P/E = Price of Stock divided Earnings Per Share</li>
+<li>Price to Book ratio is called P/B ratio. This is a measure of valuation for banking and financial companies.
+P/B = Price of Stock divided Book Value of Stock/Company</li>
+<li>Debt to Equity ratio is called D/E. This is a measure of indebtedness.
+Debt to Equity Ratio = Total Liabilities of the company divided Total shareholder’s equity</li>
+<li>Return on Equity Ratio is called RoE. It is a profit measure that can be generated with the money that has been invested by its shareholders.
+Return on equity = Net Income of company divided by Shareholder’s equity</li></ul>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- <div id="main">
+      <h1 style="color: green;">
+        Welcome to GeeksForGeeks
+      </h1>
+      <button class="openbtn" onclick="openNav()">Menu
+      </button>
+
+      <h2>
+        This is a demonstration of collapsed
+        sidebar by default. The sidebar opens
+        on clicking the Menu button.
+      </h2>
+    </div> -->
+  </section>
+
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById(
+        "mySidebar").style.width = "200px";
+      document.getElementById(
+        "main").style.marginLeft = "200px";
+    }
+
+    /* Set the width of the sidebar to 0 
+    and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById(
+        "mySidebar").style.width = "0";
+      document.getElementById(
+        "main").style.marginLeft = "0";
+    }
+  </script>
+
+<%- include('partials/footer') %>

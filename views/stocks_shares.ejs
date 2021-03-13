@@ -1,0 +1,92 @@
+<%- include('partials/header') %>
+<%- include('partials/sidebar') %>
+
+    <!-- The main division contains the actual 
+        content of the webpage -->
+
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="col-1">
+          <button class="openbtn" onclick="openNav()">Menu
+          </button>
+        </div>
+        <div class="col-11 intro">
+          <h2>
+            <u><strong>STOCKS and SHARES</strong></u>
+          </h2>
+          <p>
+            <strong><p>Stocks: These are small pieces of a company.</p>
+<p>Shares: These are units of stock.</p></strong>
+Stocks’ and ‘shares’ are basic terms that investors must understand before starting their stock market journey. However, the terms are often used interchangeably. And many people don’t know that there is a subtle difference between stock and share.
+<p>
+To some extent, it is true that they denote the same thing—an individual’s ownership in a public company. However, while the term ‘stock’ refers to part-ownership in one or more companies, the term ‘share’ has a more specific meaning. ‘Share’ refers to the unit of ownership in a single company.</p>
+<h6>Now, let us dig deeper into the essentials of the stock vs share argument.</h6>
+
+<h4>STOCK VS SHARE: KEY DIFFERENCES
+</h4>
+<ul>
+  <li>Ownership: When an individual owns shares of several companies, you can say that they own stocks. But if someone bought shares of a specific company, they only own shares.
+</li>
+<li>
+  Denomination: Individuals who own stocks have the option to choose different stocks of different values. Those who own shares in a specific company can, of course, own multiple shares. But the shares will only be of the same or equal value.
+
+</li>
+<li>
+  Paid-up value: Stocks are always fully paid-up in nature. However, shares could be either partly or fully-paid up.
+
+</li>
+<li>
+  Nominal value: This value is assigned to each share at the time the stock is issued. It is different from the market value which varies based on demand for and supply of the shares.
+
+</li>
+<li>
+  Kind of investment: Shares can refer to a large group of financial instruments known as securities. They can include mutual funds, exchange-traded funds (ETFs), limited partnerships, real estate investment trusts, etc. But stocks particularly refer to corporate equities and securities traded on a stock exchange.
+
+</li>
+</ul>
+
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- <div id="main">
+      <h1 style="color: green;">
+        Welcome to GeeksForGeeks
+      </h1>
+      <button class="openbtn" onclick="openNav()">Menu
+      </button>
+
+      <h2>
+        This is a demonstration of collapsed
+        sidebar by default. The sidebar opens
+        on clicking the Menu button.
+      </h2>
+    </div> -->
+  </section>
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById(
+        "mySidebar").style.width = "200px";
+      document.getElementById(
+        "main").style.marginLeft = "200px";
+    }
+
+    /* Set the width of the sidebar to 0 
+    and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById(
+        "mySidebar").style.width = "0";
+      document.getElementById(
+        "main").style.marginLeft = "0";
+    }
+  </script>
+
+<%- include('partials/footer') %>

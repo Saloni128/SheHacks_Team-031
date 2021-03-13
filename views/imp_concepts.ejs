@@ -1,0 +1,98 @@
+<%- include('partials/header') %>
+<%- include('partials/sidebar') %>
+
+    <!-- The main division contains the actual 
+        content of the webpage -->
+
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="col-1">
+          <button class="openbtn" onclick="openNav()">Menu
+          </button>
+        </div>
+        <div class="col-11 intro">
+          <h2>
+            Other Terms In Market
+          </h2>
+          <p>
+            <ul>
+          <li>Order: It is a show of intent to buy or sell shares in a given price range. For example, you may place an order to buy up to 100 shares of Company A, at a maximum price of Rs. 80 per share.</li>
+ 
+<li>Bid: Your bid is the amount that you are willing to pay for a share.</li>
+ 
+<li>Ask: Ask is the price at which you are willing to sell a share.</li>
+ 
+<li>Bid-ask spread: This is the difference between the amount people are w ..</li>
+ 
+<li>Market order: An order to sell/buy shares at the market price is called a market order. It is advisable to avoid placing market order as the trade price can be very volatile.</li>
+ 
+<li>Limit order: An order to sell shares above a set price or buy shares below a set price is called a limit order. You should always use limit orders to trade shares.</li>
+ 
+<li>Day order: An order that is good only till the end of the trading day is called a  ..</li>
+ 
+<li>Good-till-cancelled order: An order that will stay open until it is either executed or manually cancelled. Such orders may stand for weeks if no shares are available to trade in the price range specified. For example, if you place a GTC order to buy a share of Company A for Rs. 50 or less and the share is currently trading at Rs. 70. If it takes the share to hit Rs. 50 price point a week later, the order will be executed then. If it were a day order, it would have been cancel ..</li>
+ 
+<li>Liquidity: Liquidity refers to how easily a stock can be sold off. A share that can be sold off quickly i.e. has high trade volumes is said to be highly liquid.</li>
+ 
+<li>Trading volume: The number of shares being traded on a given day is called trading volumes.</li>
+ 
+<li>IPO/Initial Public Offering: The first time a company offers its share for trading on a stock exchange. Typically, you buy shares from the previous owner of the share an ..share and not the company directly. In case of an IPO, you get to buy the shares directly from the company.</li>
+ 
+<li> Market capitalisation: Market capitalisation is simply the value of the company as per the stock market. That is, the current value of all its shares put together.</li>
+<li>Mutual Funds: Mutual funds is a way of investing across a large number of stocks by pooling your funds with other investors. This allows you to diversify your investment even if you have limited funds. Further, a fund manager takes care of selecting the right stocks to invest in.</li>
+<li>Exchange-Traded Funds: These are mutual funds that you can trade like shares on the stock exchange. They usually track an index.</li>
+ 
+<li>Index: A benchmark that is used by investors and portfolio managers to measure market performance. Nifty and Sensex are such benchmarks. If your portfolio returned 10%, that may sound really good. But if the Sensex returned 12% during the same period – your portfolio did not perform very well.</li>
+ 
+<li>Portfolio: Portfolio is simply the collection of all the investments an investor has made.</li>
+ 
+<li>Intra-day trading: Intraday trading is about buying and selling stocks on the same day so that all positions are closed before trading hours are over on that day.</li>
+ 
+<li>Dividends: Dividend is a part of the profit distributed by a corporation among its shareholders. When a company earns profit during a financial year, aa part of that profit is usually distributed as dividends among its share holders.</li>
+</ul>
+
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- <div id="main">
+      <h1 style="color: green;">
+        Welcome to GeeksForGeeks
+      </h1>
+      <button class="openbtn" onclick="openNav()">Menu
+      </button>
+
+      <h2>
+        This is a demonstration of collapsed
+        sidebar by default. The sidebar opens
+        on clicking the Menu button.
+      </h2>
+    </div> -->
+  </section>
+
+
+  <script>
+    function openNav() {
+      document.getElementById(
+        "mySidebar").style.width = "200px";
+      document.getElementById(
+        "main").style.marginLeft = "200px";
+    }
+
+    /* Set the width of the sidebar to 0 
+    and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById(
+        "mySidebar").style.width = "0";
+      document.getElementById(
+        "main").style.marginLeft = "0";
+    }
+  </script>
+
+
+<%- include('partials/footer') %>

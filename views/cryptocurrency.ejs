@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+
+<section style="margin:10% 0% 10% 30%; align-items: center;">
+
+
+    <div style="font-size: 1.5em;"><strong>Real time exchange rate for any pair of digital currency or physical currency.</strong></div>
+<br>
+  <form action="/cryptocurrency" method="post" style="width:50%">
+    <div>
+        <label for="">Enter currency code you would like to get the exchange rate for:</label>
+        <input class="form-control" type="text" name="fromCode" id="">
+    </div>
+    <div>
+        <label for="">Enter destination currency code for the exchange rate:</label>
+        <input id="" class="form-control" type="text" name="toCode" id="">
+    </div>
+
+    <button class="btn btn-primary" style="margin-top: 8px;" type="submit">Submit</button>
+  </form>
+
+    <div>
+      <br>
+        <p>FROM <%=fromName%> ( <%=fromCode%> ) TO <%=toName%> ( <%=toCode%> )
+        <p><strong>Exchange rate is <%=rate%></strong></p></p>
+        <br>
+        <p>Bid Price : <%=bidPrice%></p>
+        <p>Ask Price : <%=askPrice%></p>
+    </div>
+
+
+</section>
+
+    
+<%- include('partials/footer') %>

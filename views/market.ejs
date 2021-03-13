@@ -1,0 +1,105 @@
+<%- include('partials/header') %>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>    
+
+<section style="margin:auto auto auto 5%; align-items: center;">
+        <form action="/market" method="post" style="width:40%">
+          <div>
+              <br>
+              <label for="">Enter Stock Code ( eg RELIANCE, SBIN , TCS, LT ..)</label>
+              <input class="form-control autocomplete" type="text" name="company" id="companyList">
+          </div>
+          <div>
+              <label for="">Date</label>
+              <input id="" class="form-control" type="date" name="date" id="">
+          </div>
+      
+          <button style="margin-top: 8px;" class="btn btn-primary" type="submit">Submit</button>
+        </form>  
+            <p>Open Value : <%=openValue %></p>
+            <p>Close Value : <%= closeValue%></p>
+            <p>Low Value : <%=lowValue %></p>
+            <p>High Value : <%= highValue%></p>
+          
+</section>
+      
+      <br>
+          <script>
+          $(function(){
+            var bseCompanies = ["SBIN","ICICIBANK","RELIANCE","BAJFINANCE","HDFCBANK","AXISBANK","HCLTECH","MARUTI","TCS","LT","HINDUNILVR","BHARTIARTL","INFY","ONGC","BIJAJFINSV","TECHM","INDUSINDBK","HDFC","KOTAKBANK","ITC","ULTRACEMCO","NTPC","BAJAJ_AUTO","SUNPHARMA","NESTLEIND","TITAN","ASIANPAINT","DRREDDY","M&M","POWERFRID"];
+            $("#companyList").autocomplete({  
+            source: bseCompanies
+            });
+           });
+          
+          //  $('#companyList').change(function () {  
+          //   alert($('#companyList').val());  
+          //   });
+          
+          </script>
+
+
+    </div>
+<div>Historical Graph</div>
+      <div class="container">
+        <canvas id="myChart" width="400" height="100"></canvas></div>
+      <script>
+      const ctx = document.getElementById('myChart').getContext('2d');
+      var myChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: ["January-2015","February-2015","March-2015","April-2015","May-2015","June-2015","July-2015","August-2015","September-2015","October-2015","November-2015","December-2015","January-2016","February-2016","March-2016","April-2016","May-2016","June-2016","July-2016","August-2016","September-2016","October-2016","November-2016","December-2016","January-2017","February-2017","March-2017","April-2017","May-2017","June-2017","July-2017","August-2017","September-2017","October-2017","November-2017","December-2017","January-2018","February-2018","March-2018","April-2018","May-2018","June-2018","July-2018","August-2018","September-2018","October-2018","November-2018","December-2018","January-2019","February-2019","March-2019","April-2019","May-2019","June-2019","July-2019","August-2019","September-2019","October-2019","November-2019","December-2019","January-2020","February-2020","March-2020","April-2020","May-2020","June-2020","July-2020","August-2020","September-2020","October-2020","November-2020","December-2020","January-2021","February-2021","March-2021"],
+              datasets: [{
+                  label: '<%=comp%>',
+                  fill:true,
+                  data: [310.0,301.6,267.0,270.05,278.15,262.8,270.4,247.1,237.25,237.2,250.45,224.4,179.95,158.4,194.3,188.95,204.85,218.65,229.05,252.55,250.7,257.85,258.4,249.75,260.0,269.2,292.6,289.45,288.55,273.6,312.55,277.35,253.75,305.8,320.45,309.5,312.75,268.75,250.1,246.3,269.2,259.3,293.4,308.85,265.0,280.5,284.35,295.65,293.35,269.75,320.8,310.2,352.55,360.9,332.05,273.7,270.9,312.25,341.85,333.7,318.55,302.9,196.95,190.4,160.3,178.4,191.45,212.15,185.4,189.25,244.3,274.75,282.05,390.2,381.2],
+                  borderColor: [
+                      'rgb(0,0,0)',
+                  ],
+                  borderWidth:1
+              }]  
+          },    
+      });
+      </script>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- L and T -->
+<div class="container"><canvas id="myChart" width="400" height="100"></canvas></div>
+<script>
+const ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["January-2015","February-2015","March-2015","April-2015","May-2015","June-2015","July-2015","August-2015","September-2015","October-2015","November-2015","December-2015","January-2016","February-2016","March-2016","April-2016","May-2016","June-2016","July-2016","August-2016","September-2016","October-2016","November-2016","December-2016","January-2017","February-2017","March-2017","April-2017","May-2017","June-2017","July-2017","August-2017","September-2017","October-2017","November-2017","December-2017","January-2018","February-2018","March-2018","April-2018","May-2018","June-2018","July-2018","August-2018","September-2018","October-2018","November-2018","December-2018","January-2019","February-2019","March-2019","April-2019","May-2019","June-2019","July-2019","August-2019","September-2019","October-2019","November-2019","December-2019","January-2020","February-2020","March-2020","April-2020","May-2020","June-2020","July-2020","August-2020","September-2020","October-2020","November-2020","December-2020","January-2021","February-2021","March-2021"],
+        datasets: [{
+            label: 'Larsen And Tourbo',
+            fill:true,
+            data: [1700.1,1766.9,1719.0,1632.5,1655.35,1782.75,1789.55,1605.3,1466.7,1411.15,1374.05,1275.65,1102.2,1079.25,1216.2,1253.55,1474.3,1496.2,1558.0,1513.85,1431.65,1476.65,1382.55,1349.4,1444.75,1470.25,1577.6,1748.05,1759.75,1687.8,1192.1,1136.0,1141.2,1220.6,1216.85,1256.95,1416.6,1319.1,1311.9,1400.6,1367.6,1271.3,1302.6,1369.1,1266.65,1298.35,1429.65,1438.5,1313.4,1294.5,1384.05,1347.75,1557.95,1553.05,1387.15,1328.1,1476.6,1473.4,1330.6,1298.95,1369.1,1183.0,806.85,897.35,932.3,944.05,913.35,945.3,902.45,929.6,1115.8,1287.55,1334.6,1442.25,1514.35],
+borderColor: ['rgb(0,0,0)',],borderWidth: 1 }]    
+    },
+    });
+</script>
+
+
+<!-- Reliance -->
+<div class="container"><canvas id="myChart" width="400" height="100"></canvas></div>
+<script>
+const ctx = document.getElementById('myChart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["January-2015","February-2015","March-2015","April-2015","May-2015","June-2015","July-2015","August-2015","September-2015","October-2015","November-2015","December-2015","January-2016","February-2016","March-2016","April-2016","May-2016","June-2016","July-2016","August-2016","September-2016","October-2016","November-2016","December-2016","January-2017","February-2017","March-2017","April-2017","May-2017","June-2017","July-2017","August-2017","September-2017","October-2017","November-2017","December-2017","January-2018","February-2018","March-2018","April-2018","May-2018","June-2018","July-2018","August-2018","September-2018","October-2018","November-2018","December-2018","January-2019","February-2019","March-2019","April-2019","May-2019","June-2019","July-2019","August-2019","September-2019","October-2019","November-2019","December-2019","January-2020","February-2020","March-2020","April-2020","May-2020","June-2020","July-2020","August-2020","September-2020","October-2020","November-2020","December-2020","January-2021","February-2021","March-2021"],
+        datasets: [{
+            label: 'Reliance Industries',
+            fill:true,
+            data: [915.35,866.25,824.7,862.85,877.15,1000.45,1001.65,856.8,860.5,947.85,968.0,1012.6,1035.05,966.55,1045.25,982.55,958.95,969.45,1015.5,1058.0,1082.1,1051.2,992.75,1080.1,1043.4,1238.25,1319.2,1394.8,1340.6,1380.25,1613.85,1593.5,782.15,940.8,922.6,921.05,961.15,952.45,882.8,963.1,921.3,972.95,1185.85,1240.95,1258.2,1061.4,1168.2,1121.05,1227.1,1231.55,1363.05,1391.8,1329.75,1252.0,1166.0,1248.35,1332.6,1464.2,1550.9,1514.1,1411.7,1328.65,1112.45,1467.05,1465.2,1703.35,2066.95,2078.55,2233.75,2054.35,1929.85,1984.65,1843.15,2083.85,2138.65],
+borderColor: ['rgb(0,0,0)',],borderWidth: 1}]},
+    });
+</script>
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,90 @@
+<%- include('partials/header') %>
+<%- include('partials/sidebar') %>
+    <!-- The main division contains the actual 
+        content of the webpage -->
+
+
+    <div class="container" id="main">
+      <div class="row">
+        <div class="col-1">
+          <button class="openbtn" onclick="openNav()">Menu
+          </button>
+        </div>
+        <div class="col-11 intro">
+          <h2>
+            How To Start
+          </h2>
+          <p>
+            <strong>1. Requirements to Invest in the Share Market 
+</strong>
+<p>Let’s first look at what you need to begin investing.</p>
+<ul>
+<li>PAN Card – It is mandatory to have a PAN Card to invest in stocks.</li>
+<li>Demat Account – This is the account that will hold the shares in the name of the buyer. You can open a Demat account with any depository participant. Most banks offer Demat account services. New age investment platforms also offer Demat account opening in a hassle-free manner.</li>
+<li>Trading Account – To start making a stock market investment, you need a trading account with a stockbroker. Remember, stockbrokers, register with stock exchanges. While most good-quality stocks are listed on both primary exchanges (BSE & NSE), some might only be available on either of the two. Ensure that you open a trading account with a broker registered with both BSE & NSE.</li>
+<li>Linked Bank Account – Since you are investing in stocks, you will be buying and selling them over time. Hence, you will need a bank account that is linked to your trading account to ensure that money flows in and out of your account seamlessly when you transact.</li>
+</ul>
+<strong>2. Documents Needed
+</strong>
+<ul>
+<li>PAN Card</li>
+<li>Aadhaar Card</li>
+<li>A cancelled cheque from your bank account with your name on it</li>
+<li>Proof of address (from the list of documents accepted by the bank/depository participant/broker)</li>
+<li>Proof of income</li>
+<li>Photographs</li>
+
+</ul>
+
+<p>With these accounts in place, you are set to begin your stock market investment journey.</p>
+ 
+<strong><h3>Just a advice</h3></strong>
+
+Unless you are trading, don’t make investment decisions based on the stock price alone. Stock investment is a marathon – not a sprint. Hence, you need to invest in a stock that can endure a long journey and generate good returns too.
+One of the best ways to find such stocks is by looking at the financials of the company. Without complicating things, simply try to assess if the company is financially sound and can withstand any economic turbulence that the future might bring. A strong company usually attracts positive investor perception and a higher stock price.
+
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- <div id="main">
+      <h1 style="color: green;">
+        Welcome to GeeksForGeeks
+      </h1>
+      <button class="openbtn" onclick="openNav()">Menu
+      </button>
+
+      <h2>
+        This is a demonstration of collapsed
+        sidebar by default. The sidebar opens
+        on clicking the Menu button.
+      </h2>
+    </div> -->
+  </section>
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById(
+        "mySidebar").style.width = "200px";
+      document.getElementById(
+        "main").style.marginLeft = "200px";
+    }
+
+    /* Set the width of the sidebar to 0 
+    and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById(
+        "mySidebar").style.width = "0";
+      document.getElementById(
+        "main").style.marginLeft = "0";
+    }
+  </script>
+
+
+<%- include('partials/footer') %>
