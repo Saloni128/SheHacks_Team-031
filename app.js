@@ -4,7 +4,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const alpha = require("alphavantage")({ key: "HWFQQYDKP1W1N6P5" });
+const alpha = require("alphavantage")({ key: apikey });
 
 const https = require("https");
 
@@ -140,7 +140,7 @@ app.post("/market", function (req, res) {
     const symbol = req.body.company;
     const inputdate=req.body.date;
     const interval = "5min";
-    const apikey = "HWFQQYDKP1W1N6P5";
+    const apikey = process.env.api_key;
   
     const year=inputdate.slice(0,4);
     const month=inputdate.slice(5,7);
@@ -190,7 +190,7 @@ app.post("/cryptocurrency", function (req, res) {
 
   const from = req.body.fromCode;
   const to=req.body.toCode;
-  const apikey = "HWFQQYDKP1W1N6P5";
+  const apikey = process.env.api_key;
 
   const url=`https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=${from}&to_currency=${to}&apikey=${apikey}`;
 
